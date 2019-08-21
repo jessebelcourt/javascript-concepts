@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Promises Lesson 1</title>
+    </head>
+    <body>
+        
+        <script>
+            // prmomises are used to handle asynchronous operations
+            // This is a basic promise created manually
+
+            let promise = new Promise(function (res, rej) {
+                let someCondition = false;
+
+                let promiseSuccessMessage = "This promise was successfully resolved!";
+                let promiseUnsuccessfulMessage = "This promise was unsuccessfully resolved...";
+
+                if (someCondition) {
+                    // resolve(promiseSuccessMessage);
+                    re();
+                } else {
+                    // reject(promiseUnsuccessfulMessage);
+                    rej();
+                }
+            });
+
+            promise
+                .then(function() {
+                    console.log("promise was successful");
+                }).catch(function () {
+                    console.log('promise was unsuccessful');
+                });
+
+            // let getPromiseResult = async () => {
+            //     try {
+            //         let messageFromPromise = await promise;
+            //         console.log(messageFromPromise);
+
+            //     } catch (e) {
+            //         console.log(e);
+            //     }
+            // }
+
+            // getPromiseResult();
+
+        </script>
+    </body>
+</html>
